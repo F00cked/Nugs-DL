@@ -8,7 +8,8 @@ Tool written in Python to download streamable tracks from nugs.net.
 The following field values need to be inputted into the config file:
 - email
 - password - in plain text
-- quality - quality track to fetch from API. 1: AAC 150, 2: FLAC, 3: ALAC, 4: 24-bit MQA.
+- quality - quality track to fetch from API. 1: AAC 150, 2: FLAC, 3: ALAC, 4: 24-bit MQA / best.
+
 Qo-DL Reborn may also be used via CLI.    
 
 ```
