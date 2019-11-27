@@ -1,7 +1,7 @@
 # Nugs-DL
 Tool written in Python to download streamable tracks from nugs.net. 
 
-![](https://thoas.feralhosting.com/sorrow/Nugs-DL/ss01.jpg)
+![](https://orion.feralhosting.com/sorrow/ngs.png)
 
 # Setup
 ## Mandatory ##
