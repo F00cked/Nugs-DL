@@ -29,6 +29,10 @@ optional arguments:
 # Update Log #
 ### 5th July 19 - Release 1 ###
 ### 27th Nov 19 - Release 2 ###
+Complete rewrite
+- Hi-res MQA support
+- CLI support
+- Download from text file support
 
 If you need to get in touch: Sorrow#5631, [Reddit](https://www.reddit.com/user/Sorrow446)
 
