@@ -171,7 +171,7 @@ def main(qual, album_id):
 		pre = os.path.join(folder_s, str(cur) + ".nugs-dl_download")
 		exist_check(pre, True)
 		download(url, title, cur, tot, qual, pre)
-		write_tags(pre, title, cur, tot, ext)
+		write_tags(pre, album_title, cur, tot, ext)
 		try:
 			os.rename(pre, post)
 		except OSError:
