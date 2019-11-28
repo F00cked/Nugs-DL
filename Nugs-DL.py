@@ -140,10 +140,13 @@ def main(qual, album_id):
 		qual -= 1
 	if qual == 0:
 		qual = None	
-	if qual in [1, 3]:
+	if qual in [1, 4]:
 		ext = ".flac"
 	else:
 		ext = ".m4a"
+	if qual == 2:
+		print("WARNING: not all albums are available for streaming in this format.\n"
+			  "Error handling hasn't been implemented to handle this yet.\n")
 	album_artist = meta['artistName']
 	try:
 		album_title = meta['venue'].rstrip() + " (" + meta['performanceDate'] + ")"
