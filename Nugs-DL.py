@@ -165,8 +165,9 @@ def main(qual, album_id):
 		if not url:
 			print("The API didn't return a track URL. Skipped.")
 			continue		
-		elif qual == 3 and not "mqa24/" in url:
-			qual = 1
+		elif qual == 4:
+			if not "mqa24/" in url:
+				qual = 1
 		post = os.path.join(folder_s, sanitize(str(cur) + ". " + title + ext))	
 		if exist_check(post, False):
 			print("Track already exists locally. Skipped")
