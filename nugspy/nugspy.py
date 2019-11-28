@@ -60,7 +60,11 @@ class Client:
 		return r['Response']['subscriptionInfo']['planName'][9:]
 
 	def get_track_url(self, id, fmt_id):
-		return self.api_call('bigriver/subplayer.aspx?', None, id=id, fmt_id=fmt_id)['streamLink']
+		r = self.api_call('bigriver/subplayer.aspx?', None, id=id, fmt_id=fmt_id)['streamLink']
+		if fmt_id == 4:
+			if not "mqa24/" in r:
+				self.get_track_url(id, 1)
+		return r
 	
 	def get_album_meta(self, id):
 		return self.api_call('api.aspx?', 'catalog.container', id=id)['Response']
